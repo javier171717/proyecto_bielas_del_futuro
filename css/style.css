@@ -50,6 +50,11 @@ body
     font-size: 1rem;
 }
 
+body.abierto
+{
+    overflow: hidden;
+}
+
 a
 {
     display:inline-block;
@@ -96,6 +101,7 @@ footer .pie .lista-redes a
 
 .cabecera
 {
+    transition: all .5s ease;
     padding-top: 1rem;
     padding-bottom: 1rem;
     /*background-color:rgba(240, 248, 255, 0.8);*/
@@ -104,6 +110,16 @@ footer .pie .lista-redes a
     left: 0;
     width: 100%;
     z-index: 999;
+}
+
+.cabecera.fondo
+{
+	background-color: rgba(7,19,48,0.8);
+}
+
+.cabecera.fondo .link-logo .logo
+{
+    width:3rem;
 }
 
 .cabecera .container
@@ -123,6 +139,7 @@ footer .pie .lista-redes a
 {
     width: 5.5rem;
     height: auto;
+    transition: all .5s ease;
 }   
 
 .cabecera .menu
@@ -1005,20 +1022,34 @@ footer .pie .lista-redes a
         font-size: 1rem;
     }
 
-    .cabecera .hamb
+    .cabecera .link-logo 
     {
-        display: block;
-    
+        position: relative;
+        z-index: 2;
     }
 
-    .cabecera .link-logo .logo {
+    .cabecera .link-logo .logo
+     {
         width:3.5rem;
         height: auto;
     }
 
+    .cabecera .hamb
+    {
+        display: block;
+        position: relative;
+        z-index: 2;
+    }
+
+  
+
 
     .cabecera .menu
     {
+        padding-right: 1rem;
+        padding-left: 1rem;
+        transition: all .5s ease;
+        transform: translateX(100%);
         position:fixed;
         top: 0;
         left: 0;
@@ -1029,8 +1060,19 @@ footer .pie .lista-redes a
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        display: none;
-        z-index: 1000;
+        display: flex;
+        z-index: 1;
+    }
+
+    .cabecera .menu.abierto
+    {
+        transform: translateX(0);
+    }
+
+    .cabecera .menu a
+    {
+        margin: 1rem 0;
+        font-size: 2rem;
     }
 
     #banner .container h1 
@@ -1067,7 +1109,7 @@ footer .pie .lista-redes a
         color: #fff;
         line-height: 1.5;
     }
-
+   
     .seccion 
     {
         padding-top: 1rem;

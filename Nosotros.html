@@ -10,26 +10,32 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <title>Bielas Del Fururo - Nosotros</title>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel=
-        "stylesheet">
-        <link rel="stylesheet" href="css/normalize.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalice.css"/>
+        <link rel="stylesheet"  href="libs/wow/animate.css">
+		<link rel="stylesheet"  href="libs/owl/owl.carousel.css">
+		<link rel="stylesheet"  href="libs/owl/owl.theme.default.css">
         <link rel="stylesheet" href="css/style.css"/>
         <link rel="shortcut icon" href="img/icono.png">
-        <script src="https://kit.fontawesome.com/84ce07572d.js" crossorigin="anonymous">
-        </script>
+        <script src="https://kit.fontawesome.com/84ce07572d.js" crossorigin="anonymous"></script>
         <script src="js/jquery.js"></script> 
+        <script src="js/jquery-ui.js"></script>
+		<script src="libs/wow/wow.js"></script>
+		<script src="libs/owl/owl.carousel.js"></script>
+		<script src="libs/jquery-validation/jquery-validation.js"></script>
+
     </head>
-    <body>
+    <body class="abierto">
         <header class="cabecera">
             <div class="container">
                 <a href="index.html" class="link-logo">
                     <img class="logo" src="img/logo.png" >
                 </a>  
                 <nav class="menu">
-                    <a href="index.html#banner" >Inicio</a>
-                    <a href="Nosotros.html" class="seleccionado">Nosotros</a>
-                    <a href="contacto.html">Contacto</a> 
-                    <a href="intranet.html" target="_blank">intr@net</a>    
+                    <a href="index.html#bielas">Inicio</a>
+                    <a href="Nosotros.html">Nosotros</a>
+                    <a href="contacto.html" target="_self">Contacto</a> 
+                    <a href="intranet.html" target="_blank">intr@net</a>        
                 </nav> 
                 <a href="#" class="hamb"><i class="fa-solid fa-bars"></i>
                 </a>
@@ -58,7 +64,7 @@
                                     </div>
                                 </div>
                                 <div class="columna columna-50 columna-mb-100 padding-grande columna-cocinero-info derecha-texto">
-                                    <h2 id="ciclista1">Lorenzo Ramirez</h2>
+                                    <h2 id="ciclista1">Jeyser José</h2>
                                     <p class="centrar-texto">En nuestra escuela, nos dedicamos a inspirar y guiar a cada 
                                        alumno en su emocionante viaje de aprendizaje
                                     </p>
@@ -73,7 +79,7 @@
                                     </div>
                                 </div>
                                 <div class="columna columna-50 columna-mb-100 padding-grande columna-cocinero-info">
-                                    <h2>Lorenzo Ramirez</h2>
+                                    <h2>Jerónimo Jiménez</h2>
                                     <p class="centrar-texto">En cada clase, cultivamos la confianza de nuestros 
                                        estudiantes al enseñarles no solo a avanzar con sus pies y mantener el equilibrio,
                                        sino también a dirigir su bicicleta con destreza.
@@ -99,7 +105,47 @@
                         </div>
                     </div>   
                 </div>          
-			</section>                
+			</section> 
+            <section id="preguntas" class="seccion">
+                <div class="container">
+                    <div class="fila">
+                        <div class="columna columna-100 centrar-texto">
+                            <h2 class="titulos">Preguntas y respuestas</h2>
+                        </div>
+                    </div>
+                    <div class="fila  margin-arriba fila-centrada">
+                        <div class="columna columna-50 columna-mb-100">
+                            <h3 class="titulo-acordion">Pregunta 1 <i class="fas fa-chevron-down"></i></h3>
+                            <div class="cuerpo-acordion">
+                                <p>¿Desde qué edad pueden unirse los niños a Bielas del Futuro?
+
+                                   "En Bielas del Futuro, damos la bienvenida a niños apasionados 
+                                    por el ciclismo desde una edad temprana. Nuestro programa está diseñado para niños 
+                                    de 2 a 6 años, ofreciendo una introducción segura y divertida al mundo del ciclismo."</p>
+                            </div>
+                            <h3 class="titulo-acordion">Pregunta 2 <i class="fas fa-chevron-down"></i></h3>
+                            <div class="cuerpo-acordion">
+                                <p>¿Cómo se adapta el programa de Bielas del Futuro a diferentes niveles de habilidad?
+
+                                 "Entendemos que cada niño es único y tiene diferentes niveles de habilidad. En Bielas 
+                                 del Futuro, nuestro programa está diseñado para adaptarse a todos los niveles, desde 
+                                 principiantes hasta ciclistas más experimentados. Ofrecemos clases y actividades que se 
+                                 ajustan al ritmo y habilidades individuales de cada niño."</p>
+                            </div>
+                            <h3 class="titulo-acordion">Pregunta 3 <i class="fas fa-chevron-down"></i></h3>
+                            <div class="cuerpo-acordion">
+                                <p>¿Cuáles son los beneficios principales de inscribir a mi hijo en Bielas del Futuro?
+
+                                   "Al unirse a Bielas del Futuro, tu hijo experimentará beneficios
+                                    como el desarrollo de habilidades motrices, fomento del trabajo en equipo, promoción
+                                    de un estilo de vida activo y saludable, y la oportunidad de crear amistades duraderas.
+                                    Además, ofrecemos un entorno seguro y divertido donde los niños pueden cultivar su amor 
+                                    por el ciclismo."</p>
+                            </div>												
+                        </div>
+                    </div>
+                </div>
+            </section>               
         </main>
        <footer>
             <div class="prefooter">
@@ -134,6 +180,8 @@
                 </div>    
             </div>     
        </footer>   
+        <div class="trama-2"></div>	
+        <div class="logo-load"><img src="img/logo.png"></div>	
        <script src="js/funciones.js"></script> 
     </body>
 </html>

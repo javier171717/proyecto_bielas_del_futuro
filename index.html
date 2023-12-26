@@ -10,24 +10,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <title>Bielas Del Fururo</title>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel=
-        "stylesheet">
-        <link rel="stylesheet" href="css/normalize.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalice.css" />
+        <link rel="stylesheet"  href="libs/wow/animate.css">
+		<link rel="stylesheet"  href="libs/owl/owl.carousel.css">
+		<link rel="stylesheet"  href="libs/owl/owl.theme.default.css">
         <link rel="stylesheet" href="css/style.css"/>
         <link rel="shortcut icon" href="img/icono.png">
-        <script src="https://kit.fontawesome.com/84ce07572d.js" crossorigin="anonymous">
-        </script>
+        <script src="https://kit.fontawesome.com/84ce07572d.js" crossorigin="anonymous"></script>
         <script src="js/jquery.js"></script> 
+        <script src="js/jquery-ui.js"></script>
+		<script src="libs/wow/wow.js"></script>
+		<script src="libs/owl/owl.carousel.js"></script>
+		<script src="libs/jquery-validation/jquery-validation.js"></script>
     </head>
-    <body>
+    <body class="abierto">
         <header class="cabecera">
             <div class="container">
                 <a href="index.html" class="link-logo">
                     <img class="logo" src="img/logo.png">
                 </a>  
-                <nav class="menu abierto">
-                    <a href="index.html#banner" >Inicio</a>
-                    <a href="Nosotros.html" class="seleccionado">Nosotros</a>
+                <nav class="menu">
+                    <a href="index.html#bielas">Inicio</a>
+                    <a href="Nosotros.html">Nosotros</a>
                     <a href="contacto.html" target="_self">Contacto</a> 
                     <a href="intranet.html" target="_blank">intr@net</a>    
                 </nav> 
@@ -45,12 +50,12 @@
                 <div class="container">
                     <div class="fila">
                         <div class="columna columna-50 columna-mb-100">
-                            <h1>Propósito Principal</h1>
-                            <p class="centrar-texto">El propósito principal de "Bielas del Futuro" es fomentar un estilo de
+                            <h1 class="wow slideInLeft" data-wow-duration="2s">Propósito Principal</h1>
+                            <p  class="wow slideInLeft" data-wow-duration="2s"class="centrar-texto">El propósito principal de "Bielas del Futuro" es fomentar un estilo de
                                  vida activo y saludable entre los niños a través del ciclismo.
-                            </p>
+                            </p >
                             <a href="#bielas" class="btn 
-                            boton-transparente">Ver Más</a>
+                            boton-transparente wow slideInLeft" data-wow-duration="2s">Ver Más</a>
                         </div>   
                     </div>
                 </div>
@@ -60,7 +65,7 @@
                 <div class="container">
                     <div class="fila">
                         <div class="columna columna-100 centrar-texto">
-                            <h2 class="titulos">Aventuras sobre dos ruedas para niños</h2>
+                            <h2 class="titulos wow slideInLeft" data-wow-duration="2s">Aventuras sobre dos ruedas para niños</h2>
                         </div>
                     </div>
                                 
@@ -191,7 +196,7 @@
                     <div class="container">
                         <div class="fila fila-centrada">
                             <div class="columna columna-50 columna-mb-100 sin-padding">
-                                <h2 class="titulos">Clases</h2>
+                                <h2 class="titulos wow slideInLeft" data-wow-duration="2s">Clases</h2>
                              </div>  
                         </div>
                         <div class="fila margin-arriba fila-centrada">
@@ -246,14 +251,38 @@
                     <div class="trama-video"></div>
                     <div class="container">
                         <div class="fila fila-centrada">
-                            <div class="columna columna-50 centrar columna-mb-100  sin-padding">
-                                <h2 class="titulos">Testimonios</h2>
-                                <p class="centrar-texto inclinar--texto">Mis hijos aman las clases en 
-                                   'Bielas del Futuro'! La forma en que enseñan a 
-                                    los niños a montar 
-                                    en bicicleta es increíble. ¡Recomendado para todas las familias!"
-                                    - María G., Madre
-                                </p>
+                            <div class="columna columna-50  columna-mb-100  centrar-texto">
+                                <h2  class="titulos wow slideInLeft" data-wow-duration="2s">Testimonio</h2>
+                            </div>
+                        </div>
+                        <div class="fila fila-centrada">
+                            <div class="columna columna-50  columna-mb-100  centrar-texto">
+                                <div class="owl-carousel owl-theme">
+                                    <div class="item">
+                                        <h3>Testimonio 1</h3>
+                                        <p class="centrar-texto inclinar--texto">Mis hijos aman las clases en 
+                                            'Bielas del Futuro'! La forma en que enseñan a 
+                                             los niños a montar 
+                                             en bicicleta es increíble. ¡Recomendado para todas las familias!"
+                                             - María G., Madre</p>
+                                    </div>
+                                    <div class="item">
+                                        <h3>Testimonio 2</h3>
+                                        <p class="centrar-texto inclinar--texto">"Mi hija disfruta cada minuto en 'Bielas del Futuro'. 
+                                            La paciencia y dedicación del equipo al enseñar a los pequeños ciclistas es excepcional.
+                                             ¡Recomiendo esta experiencia a todas las familias que deseen ver a sus hijos aprender y 
+                                             divertirse al mismo tiempo!" </p>
+                                    </div>
+                                    <div class="item">
+                                        <h3>Testimonio 3</h3>
+                                        <p class="centrar-texto inclinar--texto">"Descubrí 'Bielas del Futuro' gracias a las recomendaciones
+                                             de otros padres, ¡y estoy encantada! Mi hijo ha mejorado enormemente en su habilidad para andar 
+                                             en bicicleta, y todo el proceso ha sido divertido y educativo. Un lugar increíble para aprender 
+                                             y crecer en confianza sobre dos ruedas.
+                                            Laura M., Madre</p>
+                                    </div>
+                                </div>
+    
                             </div>
                         </div>
                     </div>
@@ -285,6 +314,14 @@
                 </div>    
             </div>     
        </footer> 
+        <div class="trama-2"></div>
+		<div class="logo-load"><img src="img/logo.png"></div>
+		<div class="trama"></div>
+
+		<div class="cuerpoimagen">
+			<img src="">
+			<a href="#" class="cerrarimagen"><i class="fas fa-times"></i></a>
+		</div>
        <script src="js/funciones.js"></script> 
     </body>
 </html>

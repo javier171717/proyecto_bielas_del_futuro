@@ -7,8 +7,8 @@ var acciones = {
 
 
 		jQuery("#bielas .boton-amarillo").click(acciones.clickbtnamarillo);
-		// jQuery("#lacarta .conteendor-cuadrado").find("img").eq(0).click(acciones.obtenersrc);
-		//jQuery("#lacarta .conteendor-cuadrado").click(acciones.obtenersrc);
+		// jQuery("#lacarta .contenedor-cuadrado").find("img").eq(0).click(acciones.obtenersrc);
+		//jQuery("#lacarta .contenedor-cuadrado").click(acciones.obtenersrc);
 		jQuery(".cabecera .menu a[href*='#']").click(acciones.irancla);
 		//jQuery(".btn-enviar").click(acciones.enviar);
 		jQuery(".cabecera .hamb").click(acciones.abrirmenu);
@@ -17,6 +17,7 @@ var acciones = {
 		jQuery(".saltarina").click(acciones.irsaltarina);
 
 		jQuery('.owl-carousel').owlCarousel({
+
 		    loop:true,
 		    margin:10,
 		    nav:false,
@@ -35,7 +36,9 @@ var acciones = {
 
 
 
+
 	},
+	
 
 	irsaltarina: function()
 	{
@@ -248,7 +251,7 @@ var acciones = {
 
 	clickbtnamarillo : function(e){
 		e.preventDefault();
-		var src = jQuery(this).closest(".conteendor-cuadrado").find("img").attr("src");
+		var src = jQuery(this).closest(".contenedor-cuadrado").find("img").attr("src");
 
 		jQuery(".cuerpoimagen").find("img").attr("src",src);
 		jQuery(".trama").fadeIn("slow",function(){

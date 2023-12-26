@@ -10,14 +10,20 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta http-equiv='X-UA-Compatible' content='IE=edge'>
             <title>Bielas Del Fururo - Contactanos</title>
-            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel=
-            "stylesheet">
-            <link rel="stylesheet" href="css/normalize.css"/>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel=  "stylesheet">
+            <link rel="stylesheet" href="css/normalice.css"/>
+            <link rel="stylesheet"  href="libs/owl/owl.carousel.css">
+            <link rel="stylesheet"  href="libs/owl/owl.theme.default.css">
+            <link rel="stylesheet"  href="css/style.css">
             <link rel="stylesheet" href="css/style.css"/>
             <link rel="shortcut icon" href="img/icono.png">
-            <script src="https://kit.fontawesome.com/84ce07572d.js" crossorigin="anonymous">
-            </script>
+            <script src="https://kit.fontawesome.com/84ce07572d.js" crossorigin="anonymous"></script>
             <script src="js/jquery.js"></script> 
+            <script src="js/jquery-ui.js"></script>
+            <script src="libs/wow/wow.js"></script>
+            <script src="libs/owl/owl.carousel.js"></script>
+            <script src="libs/jquery-validation/jquery-validation.js"></script>
+    
         </head>
     <body>
         <header class="cabecera">
@@ -26,10 +32,10 @@
                     <img class="logo" src="img/logo.png">
                 </a>  
                 <nav class="menu">
-                    <a href="index.html#banner" >Inicio</a>
+                    <a href="index.html#bielas">Inicio</a>
                     <a href="Nosotros.html">Nosotros</a>
-                    <a href="contacto.html" class="seleccionado">Contacto</a> 
-                    <a href="intranet.html" target="_blank">intr@net</a>    
+                    <a href="contacto.html" target="_self">Contacto</a> 
+                    <a href="intranet.html" target="_blank">intr@net</a>      
                 </nav> 
                 <a href="#" class="hamb"><i class="fa-solid fa-bars"></i>
                 </a>
@@ -83,7 +89,14 @@
                                     <textarea  id="mensaje" class="form-input" required name="mensaje" placeholder="Mensaje"></textarea>
                                 </div>
                                 <div class="form-bloques form-bloque-boton">
-                                  <input  type="submit" value="ENVIAR" class="btn boton-amarillo">
+                                  <!--<input  type="submit" value="ENVIAR" class="btn boton-amarillo">-->
+                                  <button class="btn boton-amarillo btn-enviar g-recaptcha"
+                                  data-sitekey="6LcmZNQhAAAAAPwCnnEGR0oaQHWTbTPaTXptUMuK"
+                                  data-callback='validando'
+                                  data-action='submit'>ENVIAR</button>
+                                </div>
+                                <div class="form-bloques form-bloque-rpta">
+                                    <div id="respuesta"></div>
                                 </div>
                             </form>
                         </div>
@@ -126,6 +139,8 @@
                 </div>    
             </div>     
        </footer>  
+        <div class="trama-2"></div>
+        <div class="logo-load"><img src="img/logo.png"></div>
        <script src="js/funciones.js"></script>  
     </body>
     </html>

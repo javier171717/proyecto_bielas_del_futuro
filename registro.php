@@ -145,8 +145,8 @@ if(is_ajax())
 
 
 			    //Recipients
-			    $mail->setFrom('nuevocorreo17@gmail.com', 'ALonso');
-			    $mail->addAddress('jacobo.amaru@gmail.com', 'Jacobo Amaru');
+			    $mail->setFrom('jimenezjavier563@gmail.com', 'Javier');
+			    $mail->addAddress('javier-170885@hotmail.com', 'Javier Jimenez');
 
   
 			    $mail->isHTML(true);

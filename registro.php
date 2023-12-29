@@ -1,4 +1,5 @@
 <?php
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -10,7 +11,7 @@ $mail = new PHPMailer(true);
 
 
 require_once("config/database.php");
-date_default_timezone_set("America/Lima");
+date_default_timezone_set("America/Bogota");
 
 $database = new Database();
 $db = $database->getConnection();
@@ -160,7 +161,7 @@ if(is_ajax())
 			    $mail->Body    = $body;
 			    if($mail->send())
 			    {
-			    	$agregado = "Pronto nos comunicremos contigo.";
+			    	$agregado = "Pronto nos comunicaremos contigo.";
 			    }
 
 			} catch (Exception $e) {

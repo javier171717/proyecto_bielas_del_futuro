@@ -22,6 +22,12 @@ $asunto = $_POST["asunto"];
 $mensaje = $_POST["mensaje"];
 $fecha = date("Y-m-d H:i:s");
 
+// Añade el siguiente bloque condicional
+if (isset($_POST["reset"])) {
+    // No procesar el formulario, solo resetear
+    exit();
+}
+
 
 // if(isset($nombre) and !empty($nombre))
 // {
